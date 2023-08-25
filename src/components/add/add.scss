@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+
+.add{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.701);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal{
+        padding: 50px;
+        border-radius: 10px;
+        background-color: $main-bg;
+        position: relative;
+
+        h1{
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+
+        .close{
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 400px;
+            justify-content: space-between;
+
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: auto;
+
+                label{
+                    font-size: 14px;
+                }
+
+                input{
+                    padding: 10px;
+                    background-color: transparent;
+                    color: rgb(0, 0, 0);
+                    outline: none;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                }
+            }
+
+            button{
+                width: 100%;
+                padding: 10px;
+                margin-left: auto;
+                padding: 5px 15px;
+                background-color: white;
+                color: rgb(255, 130, 0);
+                font-weight: bold;
+                border: solid 1px rgb(255, 130, 0);
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+                cursor: pointer;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+            }
+
+            button:hover {
+                background-color: darkorange;
+                color: white;
+                font-weight: bold;
+                border: darkorange;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+
+              }
+        }
+
+    }
+
+}
