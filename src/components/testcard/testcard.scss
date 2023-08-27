@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.testcard {
+  flex: 1;
+  margin-right: 20px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+
+  .box{
+    gap: 10%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid $light-color;
+    height: fit-content;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+    .details{
+      display: flex;
+    }
+  }
+
+  .box-pbll {
+    background-image: url('/banners/rainy2.jpg');
+    background-size: cover;
+  }
+
+  .box-emo {
+    background-image: url('/banners/emociones.jpg');
+    background-size: cover;
+  }
+
+  .box-ryr {
+    background-image: url('/banners/park.jpg');
+    background-size: cover;
+  }
+
+  .box-wisc {
+    background-image: url('/banners/wisc.jpg');
+    background-size: cover;
+  }
+}

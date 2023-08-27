@@ -1,11 +1,12 @@
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__left">
         <div className="navbar__logo">
-          <img src="logo.svg" alt="logo" />
+          <img src="/logo.svg" alt="logo" />
           Mind Guardian
         </div>
         <div className="navbar__search">
@@ -15,16 +16,16 @@ const Navbar = () => {
       <div className="navbar__right">
         <div className="navbar__item">
             <div className="notifications">
-                <img src="notifications.svg" alt="" />
+                <img src="/notifications.svg" alt="" />
                 <span>&nbsp;1&nbsp;</span>
             </div>
         </div>
-        <div className="navbar__user">
-          <img src="profile.svg" alt="" />
+        <Link to="/psicologo" className="navbar__user">
+          <img src="/profile.svg" alt="" />
           Vania
-        </div>
+        </Link>
         <div className="navbar__item">
-            <img src="settings.svg" alt="" />
+            <img src="/settings.svg" alt="" />
         </div>
       </div>
     </div>

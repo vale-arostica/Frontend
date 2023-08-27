@@ -7,24 +7,24 @@ const Menu = () => {
             <div className="item">
                 <span className="title">INICIO</span>
                 <Link to="/" className="listItem">
-                    <img src="home.svg" alt=""/>
+                    <img src="/home.svg" alt=""/>
                     <span className="description">Noticias</span>
                 </Link>
                 <Link to="/publicar" className="listItem">
-                    <img src="cohete.svg" alt=""/>
+                    <img src="/cohete.svg" alt=""/>
                     <span className="description">Publicar</span>
                 </Link>
                 <span className="title">DASHBOARD</span>
                 <Link to="/pacientes" className="listItem">
-                    <img src="paciente.svg" alt=""/>
+                    <img src="/paciente.svg" alt=""/>
                     <span className="description">Pacientes</span>
                 </Link>
                 <Link to="/agenda" className="listItem">
-                    <img src="calendar.svg" alt=""/>
+                    <img src="/calendar.svg" alt=""/>
                     <span className="description">Agenda</span>
                 </Link>
                 <Link to="/juegos" className="listItem">
-                    <img src="game.svg" alt=""/>
+                    <img src="/game.svg" alt=""/>
                     <span className="description">Juegos</span>
                 </Link>
             </div>

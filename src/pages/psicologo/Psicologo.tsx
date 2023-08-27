@@ -1,51 +1,35 @@
-import "./single.scss";
-import TestCard from "../testcard/TestCard";
+import "./psicologo.scss";
 
-type Props = {
-  id: number;
-  nombre: string;
-  edad: number;
-  fechaNacimiento: string;
-  nivelActual: number;
-  mailApoderado: string;
-};
-
-const Single = (props: Props) => {
-
+const Psicologo = () => {
   return (
-    <div className="single">
-      <div className="view">
+    <div className="psicologo">
         <div className="info">
           <div className="topInfo">
-            <img
-              src={`/monstruos/m${props.id}.png`}
-              alt=""
-              className="profileImg"
-            />
-            <h1>{props.nombre}</h1>
+            <img src={`/noavatar.png`} alt="" className="profileImg" />
+            <h1>Nombre</h1>
             <button>Editar</button>
           </div>
           <div className="details">
             {/* fetch data from api and set to details doing a map */}
             <div className="item">
               <span className="itemTitle">Nombre:</span>
-              <span className="itemValue">{props.nombre}</span>
+              <span className="itemValue">nombre</span>
             </div>
             <div className="item">
               <span className="itemTitle">Edad:</span>
-              <span className="itemValue">{props.edad}</span>
+              <span className="itemValue">edad</span>
             </div>
             <div className="item">
               <span className="itemTitle">Fecha de nacimiento:</span>
-              <span className="itemValue">{props.fechaNacimiento}</span>
+              <span className="itemValue">fechaNacimiento</span>
             </div>
             <div className="item">
               <span className="itemTitle">Nivel actual:</span>
-              <span className="itemValue">{props.nivelActual}</span>
+              <span className="itemValue">nivelActual</span>
             </div>
             <div className="item">
               <span className="itemTitle">Mail apoderado:</span>
-              <span className="itemValue">{props.mailApoderado}</span>
+              <span className="itemValue">mailApoderado</span>
             </div>
           </div>
         </div>
@@ -56,9 +40,7 @@ const Single = (props: Props) => {
           <button className="profile_button">Calificaciones</button>
         </div>
       </div>
-      <TestCard />
-    </div>
   );
 };
 
-export default Single;
+export default Psicologo;
