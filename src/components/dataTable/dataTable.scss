@@ -2,6 +2,8 @@
     .dataGrid{
         background-color: white;
         padding: 7px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
         .MuiDataGrid-toolbarContainer{
             flex-direction: row-reverse;
         }

@@ -1,60 +1,169 @@
 @import "../../styles/variables.scss";
 
-.psicologo{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 1px #ccc;
-    padding: 10px;
+.view {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 1px #ccc;
+  padding: 10px;
+  display: flex;
 
-    .info{
-        margin-left: 20px;
+  .info {
+    margin-left: 20px;
 
-        .topInfo{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 10px;
+    .topInfo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
 
-            .profileImg{
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-                background-color: #ccc;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 40px;
-                color: #fff;
-                border: 4px solid $celeste;
-            }
+      .title_container {
+        display: block;
+        margin-top: 5px;
 
-            button{
-                margin-left: 5%;
-            }
+        .bajada {
+          font-size: 14px;
+          color: #666;
         }
+      }
 
-        .details{
-            margin: 10px;
-            font-size: 13px;
+      .profileImg {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: #fff;
+        border: 4px solid $celeste;
+      }
 
-
-            .item{
-                margin: 10px 0px;
-
-                .itemTitle{
-                    font-weight: 600;
-                    margin-right: 10px;
-                    text-transform: capitalize;
-                }
-            }
-
-        }
+      button {
+        margin-right: 5%;
+      }
     }
 
+    .details {
+      margin: 10px;
+      font-size: 16px;
+      margin-top: 30px;
 
-    .action_buttons{
-        margin: 30px;
-        gap: 10px;
+      .item {
+        margin: 20px 0px;
+
+        .itemTitle {
+          font-weight: 600;
+          margin-right: 10px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .adicional {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Cambia 'center' a 'flex-start' para alinear a la izquierda */
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border-left: solid 1px #ccc;
+
+    .consultas{
+        margin-left: 5%;
+
+        .bold{
+            font-weight: bold;
+        }
+    }
+  }
+
+  .adicional h3 {
+    margin: 0; /* Elimina el margen derecho y ajusta según sea necesario */
+  }
+
+  .action_buttons {
+    margin: 30px;
+    gap: 10px;
+    display: flex;
+
+    .linkedin_button {
+      display: inline-flex; /* Change to inline-flex to align image and text */
+      align-items: center;
+      gap: 5px;
+      color: #0077b5;
+      background-color: white;
+      border: 1px solid #0077b5;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
 
+    .doctor_button {
+      display: inline-flex; /* Change to inline-flex to align image and text */
+      align-items: center;
+      gap: 5px;
+      color: #00c3a5;
+      background-color: white;
+      border: 1px solid #00c3a5;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+
+    .web_button {
+      display: inline-flex; /* Change to inline-flex to align image and text */
+      align-items: center;
+      gap: 5px;
+      width: auto;
+      font-size: 10pt;
+      padding: 10px;
+      margin-left: auto;
+      padding: 5px 15px;
+      background-color: white;
+      color: $primary-orange;
+      font-weight: bold;
+      border: solid 1px $primary-orange;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .action_buttons {
+    margin: 30px;
+    gap: 10px;
+  }
 }

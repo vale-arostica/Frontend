@@ -10,7 +10,9 @@ type Props = {
   mailApoderado: string;
 };
 
-const Single = (props: Props) => {
+//props: Props
+
+const Single = () => {
 
   return (
     <div className="single">
@@ -18,45 +20,47 @@ const Single = (props: Props) => {
         <div className="info">
           <div className="topInfo">
             <img
-              src={`/monstruos/m${props.id}.png`}
+              src={`/monstruos/m1.png`} /*${props.id} */
               alt=""
               className="profileImg"
             />
-            <h1>{props.nombre}</h1>
+            <h1>{/*props.nombre*/}  Juan Pineda</h1>
             <button>Editar</button>
           </div>
           <div className="details">
             {/* fetch data from api and set to details doing a map */}
             <div className="item">
               <span className="itemTitle">Nombre:</span>
-              <span className="itemValue">{props.nombre}</span>
+              <span className="itemValue">{/*props.nombre*/} Juan Pineda </span>
             </div>
             <div className="item">
               <span className="itemTitle">Edad:</span>
-              <span className="itemValue">{props.edad}</span>
+              <span className="itemValue">{/*props.edad*/} 12 </span>
             </div>
             <div className="item">
               <span className="itemTitle">Fecha de nacimiento:</span>
-              <span className="itemValue">{props.fechaNacimiento}</span>
+              <span className="itemValue">{/*props.fechaNacimiento*/} 25/05/2017 </span>
             </div>
             <div className="item">
               <span className="itemTitle">Nivel actual:</span>
-              <span className="itemValue">{props.nivelActual}</span>
+              <span className="itemValue">{/*props.nivelActual*/} 10 </span>
             </div>
             <div className="item">
               <span className="itemTitle">Mail apoderado:</span>
-              <span className="itemValue">{props.mailApoderado}</span>
+              <span className="itemValue">{/*props.mailApoderado*/} varo@mail.com </span>
             </div>
           </div>
-        </div>
+        
         <div className="action_buttons">
           <button className="profile_button">Sesiones de paciente</button>
           <button className="profile_button">Bitácora</button>
           <button className="profile_button">Diagnóstico</button>
           <button className="profile_button">Calificaciones</button>
         </div>
+        </div>
+        <div className="progreso"><TestCard /></div>
+        
       </div>
-      <TestCard />
     </div>
   );
 };

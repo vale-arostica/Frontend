@@ -1,12 +1,33 @@
 @import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
 
 .single{
     display: flex;
+
+    @include xxl{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include md{
+        .view{
+            flex-direction: column;
+        }
+        flex-direction: column;
+        gap: 50px;
+    }
+    @include sm{
+        .view{
+            flex-direction: column;
+        }
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .view{
-        flex: 1;
+        display: flex;
         .info{
             margin-left: 20px;
-
             .topInfo{
                 display: flex;
                 align-items: center;
@@ -33,11 +54,11 @@
 
             .details{
                 margin: 10px;
-                font-size: 13px;
-
+                font-size: 16px;
+                margin-top: 30px;
 
                 .item{
-                    margin: 10px 0px;
+                    margin: 20px 0px;
 
                     .itemTitle{
                         font-weight: 600;
@@ -51,13 +72,25 @@
 
         .action_buttons{
             margin-top: 50px;
-            display: flex;
-            margin-right: 30px;
+            margin-left: 0; /* Remove the left margin */
             .profile_button{
                 height: 90px;
                 overflow-wrap: normal;
                 width: 110px;
             }
+
+
+            @include md{
+                flex-direction: column;
+                gap: 20px;
+                .profile_button{
+                    width: 100%;
+                }
+            }
+        }
+
+        .progreso{
+            width: 100%;
         }
     }
 

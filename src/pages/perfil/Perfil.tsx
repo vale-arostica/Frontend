@@ -7,7 +7,7 @@ const Perfil = () => {
 
     return(
         <div className="perfil">
-            <Single {...singleUser}/>
+            <Single /> {/*{...singleUser} */}
         </div>
     )
 }

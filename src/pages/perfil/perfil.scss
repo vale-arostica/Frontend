@@ -1,4 +1,11 @@
+@import "../../styles/responsive.scss";
+
 .perfil{
     background-color: white;
     border-radius: 10px;
+
+    @include xxl{
+        flex-direction: column;
+        gap: 50px;
+    }
 }

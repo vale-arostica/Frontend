@@ -24,7 +24,7 @@ const Menu = () => {
                     <span className="description">Agenda</span>
                 </Link>
                 <Link to="/juegos" className="listItem">
-                    <img src="/game.svg" alt=""/>
+                    <img src="/phone.svg" alt=""/>
                     <span className="description">Juegos</span>
                 </Link>
             </div>

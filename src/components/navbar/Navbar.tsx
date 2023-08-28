@@ -9,9 +9,6 @@ const Navbar = () => {
           <img src="/logo.svg" alt="logo" />
           Mind Guardian
         </div>
-        <div className="navbar__search">
-          <input type="text" placeholder="Buscar" className="search-input" />
-        </div>
       </div>
       <div className="navbar__right">
         <div className="navbar__item">

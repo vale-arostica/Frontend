@@ -1,5 +1,5 @@
 @import "../../styles/variables";
-
+@import "../../styles/responsive";
 
 // Clase para el contenedor principal del navbar
 .navbar {
@@ -75,6 +75,14 @@
     .navbar__item {
         display: flex;
         align-items: center;
+
+        :hover{
+            cursor: pointer;
+        }
+
+        @include sm{
+            display: none;
+        }
       img {
         width: 20px;
         height: 20px;
