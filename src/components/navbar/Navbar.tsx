@@ -21,9 +21,6 @@ const Navbar = () => {
           <img src="/profile.svg" alt="" />
           Vania
         </Link>
-        <div className="navbar__item">
-            <img src="/settings.svg" alt="" />
-        </div>
       </div>
     </div>
   );

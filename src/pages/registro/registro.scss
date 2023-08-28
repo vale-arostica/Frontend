@@ -1,0 +1,96 @@
+@import "../../styles/variables.scss";
+
+.registro {
+    background-image: url("/background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .register-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      
+    }
+  
+    .register-card {
+        
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      width: 400px; /* Set the width for a single-column layout */
+      text-align: center;
+  
+      h1 {
+        color: $main-color;
+        font-size: 25pt;
+      }
+  
+      .logo {
+        margin-bottom: 14px;
+        img {
+          width: 100px;
+        }
+      }
+  
+      form {
+        margin-top: 20px;
+        .input-group {
+          margin-bottom: 20px;
+          position: relative;
+  
+          input {
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: 2px solid $primary-purple;
+            border-radius: 5px;
+            display: block;
+          }
+  
+          .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: $primary-purple;
+          }
+
+          .seleccion{
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: 2px solid $primary-purple;
+            border-radius: 5px;
+            display: block;
+          }
+        }
+  
+        label {
+          display: flex;
+          align-items: center;
+          color: $primary-purple;
+          margin-bottom: 10px;
+          font-size: 14px;
+  
+          input[type="checkbox"] {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  
+    .actions {
+      margin-top: 20px;
+    }
+  
+    .action-link {
+      color: $primary-orange;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }

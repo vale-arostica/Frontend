@@ -8,7 +8,8 @@ import Menu from './components/menu/Menu';
 import Publicar from './pages/publicar/Publicar';
 import Login from './pages/login/Login';
 import Perfil from './pages/perfil/Perfil';
-import Psicologo from './pages/psicologo/psicologo';
+import Psicologo from './pages/psicologo/Psicologo';
+import Registro from './pages/registro/Registro';
 import "./styles/global.scss";
 import {
   createBrowserRouter,
@@ -48,12 +49,16 @@ function App() {
         { path: "/pacientes", element: <Pacientes/> },
         { path: "/agenda", element: <Agenda/> },
         { path: "/perfil/:id", element: <Perfil/>},
-        { path: "/psicologo", element: <Psicologo/>}
+        { path: "/psicologo", element: <Psicologo/>},
       ]
     },
     {
       path: "/login",
       element: <Login/>
+    },
+    {
+      path: "/registro",
+      element: <Registro/>
     }
   ]);
 

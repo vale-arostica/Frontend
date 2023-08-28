@@ -27,6 +27,10 @@ const Menu = () => {
                     <img src="/phone.svg" alt=""/>
                     <span className="description">Juegos</span>
                 </Link>
+                <Link to="/login" className="listItem">
+                    <img src="/logout.svg" alt=""/>
+                    <span className="description">Salir</span>
+                </Link>
             </div>
         </div>
     )
