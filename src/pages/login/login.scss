@@ -27,9 +27,21 @@
   }
 
   .logo {
-    margin-bottom: 14px;
-    img{
-        width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; // Add this to center vertically
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    .MG {
+      width:300px;
+      height: min-content;
+      margin-bottom: 10px;
+      min-height: min-content;
+    }
+    img {
+      width: 100px;
+      margin-top: 0px;
     }
   }
 

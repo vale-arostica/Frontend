@@ -7,9 +7,10 @@ const Login: React.FC = () => {
     <div className="login">
       <div className="login-card">
         <div className="logo">
+          <img className="MG" src="/LogoMG.svg" alt="" width="250" />
           <img src="/logo.svg" alt="Logo" width="80" />
         </div>
-        <h1>¡Hola de nuevo!</h1>
+        <h3>¡Hola de nuevo!</h3>
         <form>
           <div className="input-group">
             <FaUser className="input-icon" />

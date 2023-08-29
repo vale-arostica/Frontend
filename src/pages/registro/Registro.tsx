@@ -6,65 +6,65 @@ const Registro: React.FC = () => {
   return (
     <div className="registro">
       <div className="register-card">
+        
         <div className="logo">
+          <img className="MG" src="/LogoMG.svg" alt="" width="250" />
           <img src="/logo.svg" alt="Logo" width="100" />
         </div>
-        <h1>Crear una cuenta</h1>
+        <h3>¡Crea una cuenta!</h3>
         <form>
-          <div className="input-group">
-            <FaUser className="input-icon" />
-            <input type="text" id="username" placeholder="Nombre" />
-          </div>
-          <div className="input-group">
-            <FaEnvelope className="input-icon" />
-            <input type="email" id="email" placeholder="Email" />
-          </div>
-          <div className="input-group">
-            <FaLock className="input-icon" />
-            <input type="password" id="password" placeholder="Contraseña" />
-          </div>
-          <div className="input-group">
-            <FaLock className="input-icon" />
-            <input
-              type="password"
-              id="confirm-password"
-              placeholder="Confirmar contraseña"
-            />
-          </div>
-          <div className="input-group">
-            <img src="/gender.svg" className="input-icon" />
-            <select id="gender" className="seleccion">
-              <option value="" disabled selected>
-                Género
-              </option>
-              <option value="Male">Masculino</option>
-              <option value="Female">Femenino</option>
-              <option value="Other">Otro</option>
-            </select>
-          </div>
-          <div className="input-group">
-            <FaUserPlus className="input-icon" />
-            <select id="profession" className="seleccion">
-              <option value="" disabled selected>
-                Relación con niños/as
-              </option>
-              <option value="Psicólogo/a">Psicólogo/a</option>
-              <option value="Psiquiatra">Psiquiatra</option>
-              <option value="Médico/a">Médico/a</option>
-              <option value="Terapista ocupacional">
-                Terapeuta ocupacional
-              </option>
-              <option value="Terapista ocupacional">
-                Terapeuta complementario
-              </option>
-              <option value="Terapista ocupacional">
-                Psicopedagogo/a
-              </option>
-              <option value="Terapista ocupacional">
-                Profesor/a
-              </option>
-              <option value="Tutor legal">Tutor/a</option>
-            </select>
+          <div className="fields">
+            <div className="input-group">
+              <FaUser className="input-icon" />
+              <input type="text" id="username" placeholder="Nombre" />
+            </div>
+            <div className="input-group">
+              <FaEnvelope className="input-icon" />
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div className="input-group">
+              <FaLock className="input-icon" />
+              <input type="password" id="password" placeholder="Contraseña" />
+            </div>
+            <div className="input-group">
+              <FaLock className="input-icon" />
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirmar contraseña"
+              />
+            </div>
+            <div className="input-group">
+              <img src="/gender.svg" className="input-icon" />
+              <select id="gender" className="seleccion">
+                <option value="" disabled selected>
+                  Género
+                </option>
+                <option value="Male">Masculino</option>
+                <option value="Female">Femenino</option>
+                <option value="Other">Otro</option>
+              </select>
+            </div>
+            <div className="input-group">
+              <FaUserPlus className="input-icon" />
+              <select id="profession" className="seleccion">
+                <option value="" disabled selected>
+                  Relación con niños/as
+                </option>
+                <option value="Psicólogo/a">Psicólogo/a</option>
+                <option value="Psiquiatra">Psiquiatra</option>
+                <option value="Médico/a">Médico/a</option>
+                <option value="Terapista ocupacional">
+                  Terapeuta ocupacional
+                </option>
+                <option value="Terapista ocupacional">
+                  Terapeuta complementario
+                </option>
+                <option value="Terapista ocupacional">Psicopedagogo/a</option>
+                <option value="Terapista ocupacional">Profesor/a</option>
+                <option value="Tutor legal">Tutor/a</option>
+              </select>
+            </div>
           </div>
           <label>
             <input
@@ -82,7 +82,7 @@ const Registro: React.FC = () => {
             />
             Quiero recibir feedback por email.
           </label>
-          <button type="submit">Sign Up</button>
+          <button type="submit">Registrarse</button>
         </form>
         <div className="actions">
           <a className="action-link" href="/login">
